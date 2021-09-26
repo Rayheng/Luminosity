@@ -5,14 +5,13 @@ Created on Fri Sep 24 23:18:24 2021
 """
 
 import pandas as pd
+import datetime
+import numpy as np
+import matplotlib.pyplot as plt
 
 pd.set_option('display.max_rows', 500)
 pd.set_option('display.max_columns', 500)
 pd.set_option('display.width', 1000)
-
-import datetime
-import numpy as np
-import matplotlib.pyplot as plt
 
 # Constructing an time series index
 idx = pd.date_range("2021-01-01" , periods = len(y) , freq = 'D')
